@@ -1,0 +1,346 @@
+@CHARSET "UTF-8";
+
+/* formatting for the general body of the website.*/
+  body{
+  	overflow-x: hidden;
+  	font-size:18px;
+  	background-color: GhostWhite;
+  }
+  
+  label{
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   }
+  
+    /* this is the format for the input button.*/
+  input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+   /* This is for the primary body of the website, used to be in tandem with the left most
+   table so that there are no organizational conflicts.*/
+  article {
+	position: relative;
+	height: 300px;
+  	
+  	font-family: Aleo;
+  	font-weight: normal;
+  	font-size: 23px;
+  	color: black;
+  	
+  	margin: auto;
+  	background-color: GhostWhite;
+  	z-index: 0;
+  }
+  
+    /* \\\\THIS IS FOR IMAGES, particularly the background image used.\\\\*/
+  .image {
+  	background-image: url("plu_harstad.jpg");
+  	height: 330px;
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  }
+  
+  .image_2 {
+  	background-image: url("plu_harstad.jpg");
+  	height: 200px;
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  }
+  
+  /* \\\\THIS IS FOR TABLES, all subsequent sections are present\\\\*/
+  
+  table.header {
+  	position: absolute;
+    background-color: black;
+    
+    color: white;
+    font-size:25px;
+    width:1887px;
+    margin: auto;
+  }
+  
+  .tabledata {
+  	position: absolute;
+  	bottom: 30px; 
+  	left: 730px;
+  	border: 1px solid black; 
+   	border-collapse: collapse;
+  	padding:5px;
+  
+  	font-family: Aleo;
+  	margin: auto;
+  	background-color: GhostWhite;
+  	width: 450px;
+  	height: 290px; 
+  } 
+  
+  /*This is for createAcct*/
+  .tabledata {
+  	position: absolute;
+  	bottom: 30px; 
+  	left: 730px;
+  	border: 1px solid black; 
+   	border-collapse: collapse;
+  	padding:5px;
+  
+  	font-family: Aleo;
+  	margin: auto;
+  	background-color: GhostWhite;
+  	width: 450px;
+  	height: 290px; 
+  } 
+  
+  /*This is for more general use*/
+  .td {
+  	border: 1px solid black;
+  	border-collapse: collapse;
+  	padding: 5px;
+  	font-family: Aleo;
+  	font-size: 18px;
+  }
+  
+  /*This is for the settings page*/
+  .td2 {
+  	border: 1px solid black;
+  	border-collapse: collapse;
+  	padding: 10px;
+  	font-family: Aleo;
+  	font-size: 18px;
+  }
+  
+  .formatTable1 {
+  	position: absolute;
+  	left: 300px;
+  	top: 5px;;
+  	text-align: left;
+  	
+  	border: 1px solid black; 
+   	border-collapse: collapse;
+  	padding:5px;
+  	
+  	overflow-y: scroll;
+  	height: 530px;
+  	display: block;
+  	
+  	width: 600px;
+  }
+  
+  .formatTable2 {
+  	position: absolute;
+  	left: 935px;
+  	top: 5px;
+  	text-align: left;
+  	
+  	border: 1px solid black; 
+   	border-collapse: collapse;
+  	padding:5px;
+  	
+  	height: 530px;
+  	display: none;
+  	
+  	width: 653px;
+  }
+  
+  .hiddencontent {
+    position: absolute;
+  	font-size: 20px;
+  	background-color: GhostWhite;
+  	
+  	display: none;
+  	z-index: 1;
+  }
+  
+  section::after {
+  	content: "";
+  	display: table;
+  	clear: both;
+  }
+  
+  table.noborder td{border:0;}
+  table.noborder th{border:0;}
+  
+    /* \\\\THIS IS FOR HEADERS, all subsequent sections are present\\\\*/
+  h1{
+  	position: absolute;
+  	left: 717px; 
+  	font-family: Aleo;
+  	font-size: 60px;
+  	text-align: center; 
+  	
+  	color: black;
+    background-color: GhostWhite; 
+  }
+  
+  h4{
+  	position: absolute;
+  	left: 250px;
+  	font-family: Aleo;
+  	font-size: 27px;
+  	text-align: left;
+  	
+  	padding: 10px;
+  	
+  	background-color: GhostWhite;
+  }
+  
+  h5{
+  	position: absolute;
+  	left: 375px;
+  	font-family: Aleo;
+  	font-weight: normal;
+  	font-size: 14px;
+  	text-align: center; 
+  	
+  	padding-top: 60px;
+  	padding-bottom: 80px;
+  	
+  	color: gray;
+  }
+  
+  /* \\\\THIS IS FOR BUTTONS, all subsequent sections are present\\\\*/
+  
+  button.unhidebtn {
+  	overflow: inherit;
+  	position: relative;
+  	
+  	text-align: left;
+  	font-family: Aleo;
+  	font-size: 30px;
+  	height: 60px; 
+  	width: 568px;
+  	background-color: GhostWhite;
+  }
+  
+  .unhidebtn:hover {
+  	background-color: lightGrey;
+  }
+  
+  .unhidebtn:focus { 
+  	background-color: green;
+  }
+  
+  .findMore { 
+  	position: absolute;
+  	left: 1350px; 
+  	top: 548px;
+  	
+  	font-size: 30px;
+  	font-family: Aleo;
+  }
+  
+  .join {
+  	position: absolute;
+  	left: 1400px;
+  	top: 548px;
+  	
+  	font-size: 30px;
+  	font-family: Aleo; 
+  }
+  
+  .leave {
+  	position: absolute;
+  	left: 300px; 
+  	top: 548px;
+  	
+  	font-size: 30px;
+  	font-family: Aleo; 
+  }
+   
+  .delete {
+  	position: absolute;
+  	left: 450px; 
+  	top: 548px;
+  	
+  	font-size: 30px;
+  	font-family: Aleo; 
+  }
+  
+  .settings {
+  	position: absolute;
+  	text-align: center;
+  	left: 700px; 
+  	
+  	font-size: 30px;
+  	font-family: Aleo; 
+  }
+  
+   /* \\\\THIS IS FOR THE LEFTMOST TABLE, as well as other features of highlights and drop down functionality \\\\*/
+  nav {
+  	position: absolute;
+  	font-weight: normal;
+  	width: 11%;
+  	text-align: left;
+  	margin: auto;
+    background-color: black;
+    color: white;
+    font-size:30px;
+  	height: 600px; 
+  	z-index: 2;
+  }
+  
+  .dropbtn {
+    color: white;
+  }
+  
+  .dropdown {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    color:white;
+  }
+
+  .dropdown-content {
+    position: absolute;
+    font-size: 25px;
+    background-color: white;
+    min-width: 150px;
+    display: none;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 11px 14px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: orange;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    color: grey;
+  }
+  
+  /* this is for the highlights of our header and the leftmost table index.*/
+  a {
+  	text-decoration:none;
+  }
+  a.highlight:link {
+  	color:GhostWhite;
+  }
+  a.highlight:visited {
+  	color:Silver;
+  }
+  a.highlight:hover {
+  	color:Gray;
+  }
+  
+  
+  
